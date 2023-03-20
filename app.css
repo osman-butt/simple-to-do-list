@@ -1,91 +1,116 @@
 /* ---------- root variables ---------- */
 :root {
-    --green: rgb(38, 76, 89);
-    --green-opacity: rgba(38, 76, 89, 0.2);
-    --light-green: rgb(172, 198, 201);
-    --light-grey: #f1f1f4;
-    --text-color-light: #f1f1f1;
-    --text-color-dark: #333;
-    --white: #fff;
-    --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --text-color-out-of-stock: rgb(89, 38, 38);
-    --text-color-in-stock: rgb(172, 198, 201);
+  --green: rgb(38, 76, 89);
+  --green-opacity: rgba(38, 76, 89, 0.2);
+  --light-green: rgb(172, 198, 201);
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
+  --white: #fff;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --text-color-out-of-stock: rgb(89, 38, 38);
+  --text-color-in-stock: rgb(172, 198, 201);
 }
 
 /* ---------- general styling ---------- */
 html {
-    color: var(--text-color-dark);
-    font-family: var(--font-family);
-    height: 100%;
-    width: 100%;
+  color: var(--text-color-dark);
+  font-family: var(--font-family);
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    margin: 0;
-    font-size: 1.2em;
+  margin: 0;
+  font-size: 1.2em;
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  text-align: center;
 }
 
 /* ---------- header styling ---------- */
 header {
-    background-color: var(--green);
-    color: var(--text-color-light);
-    padding: 1em;
+  background-color: var(--green);
+  color: var(--text-color-light);
+  padding: 1em;
 }
 
 /* ---------- form styling ---------- */
 /* input form stryling */
 section {
-    background-color: var(--light-green);
-    padding: 1em 1em 2em;
-    text-align: center;
+  background-color: var(--light-green);
+  padding: 1em 1em 2em;
+  text-align: center;
 }
 
 button {
-    font-weight: 300;
-    font-size: 1em;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    border-radius: 0;
-    color: var(--text-color-light);
-    background-color: var(--green);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    padding: 0.5em 1em;
-    width: 100%;
-    max-width: 380px;
+  font-weight: 300;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  color: var(--text-color-light);
+  background-color: var(--green);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  width: 100%;
+  max-width: 380px;
 }
 
 input {
-    margin: 1em auto;
-    width: 100%;
-    max-width: 350px;
-    padding: 1em;
-    border: 2px solid var(--green);
-    display: block;
-    background: var(--white);
+  margin: 1em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 1em;
+  border: 2px solid var(--green);
+  display: block;
+  background: var(--white);
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.notValidated {
+  border: 2px solid red;
 }
 
 ul {
-    margin: 1em auto;
-    width: 100%;
-    max-width: 350px;
-    padding: 1em 0 0 1em;
+  margin: 1em auto;
+  width: 100%;
+  max-width: 350px;
+  padding: 1em 0 0 1em;
 }
 
 li {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 li button {
-    font-size: 0.8em;
-    width: initial;
-    float: right;
+  font-size: 0.8em;
+  width: initial;
+  float: right;
+}
+
+.update,
+.delete {
+  border-radius: 1em;
+  margin-right: 0.5em;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.minMaxEditableText {
+  width: 100px;
+  max-width: 200px;
+  word-break: break-all;
+  display: inline;
 }
