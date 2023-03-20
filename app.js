@@ -30,7 +30,7 @@ function addToDo() {
     newToDo.classList.remove("notValidated");
     const myHTML = /*html*/ `
     <li>
-        <span class="minMaxEditableText">${newToDo.value}</span>
+        <span>${newToDo.value}</span>
         <button class="update">Update</button>
         <button class="delete">Delete</button>
     </li>
@@ -52,9 +52,11 @@ function addToDo() {
 function removeToDo() {
   console.log(this.parentNode);
   this.parentNode.remove();
+  newToDo.classList.remove("notValidated");
 }
 
 function updateToDo() {
+  newToDo.classList.remove("notValidated");
   // remove event listener
   this.removeEventListener("click", updateToDo);
   this.textContent = "Save";

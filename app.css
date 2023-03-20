@@ -84,7 +84,7 @@ input:focus-visible {
 ul {
   margin: 1em auto;
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   padding: 1em 0 0 1em;
 }
 
@@ -108,9 +108,7 @@ button:hover {
   opacity: 0.8;
 }
 
-.minMaxEditableText {
-  width: 100px;
-  max-width: 200px;
-  word-break: break-all;
-  display: inline;
+span {
+  padding-right: 0.5em;
+  padding-left: 0.2em;
 }
